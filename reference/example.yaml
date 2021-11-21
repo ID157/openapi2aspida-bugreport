@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: example
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /example:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Example'
+      operationId: get-example
+components:
+  schemas:
+    Example:
+      title: Example
+      type: array
+      description: ''
+      x-examples: {}
+      items:
+        type: number
+        nullable: true

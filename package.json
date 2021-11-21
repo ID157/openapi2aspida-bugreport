@@ -1,0 +1,15 @@
+{
+  "name": "openapi2aspida-bugreport",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "openapi2aspida": "^0.16.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.9"
+  },
+  "scripts": {
+    "generate": "rm -rf ./api | openapi2aspida -i ./reference/example.yaml"
+  }
+}
